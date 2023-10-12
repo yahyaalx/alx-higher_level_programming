@@ -15,4 +15,4 @@ def roman_to_int(roman_string):
             total += roman_to_int[roman_string[i]]
             i += 1
 
-    return (total)
+    return int(total)
