@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+""" a class that def a rec"""
 class Rectangle:
     """
     This class defines a rectangle and provides width and height attributes.
@@ -22,9 +22,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """
-        Retrieves the width attribute.
-        """
+        """Retrieves the width attribute."""
         return self.__width
 
     @width.setter
