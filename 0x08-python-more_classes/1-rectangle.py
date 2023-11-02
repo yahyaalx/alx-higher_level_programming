@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 class Rectangle:
     """
     This class defines a rectangle and provides width and height attributes.
@@ -8,11 +9,11 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """
         Initializes an instance of the Rectangle class.
-        
+
         Args:
             width (int): Represents the width of the rectangle. Default is 0.
             height (int): Represents the height of the rectangle. Default is 0.
-        
+
         Raises:
             TypeError: If width or height is not of integer type.
             ValueError: If width or height is less than zero.
