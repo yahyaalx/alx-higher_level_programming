@@ -1,0 +1,23 @@
+def test_text_indentation():
+    """
+    This is a doctest for the 'text_indentation' function.
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+    >>> text_indentation("Hello, how are you? I'm fine.")
+    Hello, how are you?
+    I'm fine.
+
+    >>> text_indentation(123)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation("Hello, how are you?\n\nI'm fine.")
+    Hello, how are you?
+
+    I'm fine.
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
+    """
