@@ -1,0 +1,97 @@
+>>> from 0-add_integer import add_integer
+# Normal addition test
+>>> add_integer(0)
+98
+>>> add_integer(-1)
+97
+>>> add_integer(10.5)
+108
+
+# Type Errors
+>>> add_integer(10+5j)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer([])
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer({})
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(set())
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> add_integer("")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+# Two input addition type errors
+>>> add_integer(10, 10+5j)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+>>> add_integer(10, [])
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+>>> add_integer(10, {})
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+>>> add_integer(10, set())
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+>>> add_integer(10, "")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+# Test with float inputs
+>>> add_integer(10.5, 20.5)
+31
+>>> add_integer(10.5, -20.5)
+-10
+
+# Test with negative inputs
+>>> add_integer(-10, -20)
+-30
+>>> add_integer(-10.5, -20.5)
+-31
+
+# Test with zero inputs
+>>> add_integer(0, 0)
+0
+>>> add_integer(0, 10)
+10
+>>> add_integer(10, 0)
+10
+
+# Test with large inputs
+>>> add_integer(1000000000, 1000000000)
+2000000000
+
+# Test with one input
+>>> add_integer(10)
+108
+>>> add_integer(-10)
+88
+>>> add_integer(0)
+98
+>>> add_integer(1000000000)
+1000000098
+
+# Test with None inputs
+>>> add_integer(None)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+>>> add_integer(10, None)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
