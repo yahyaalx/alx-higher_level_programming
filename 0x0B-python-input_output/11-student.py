@@ -16,8 +16,8 @@ class Student:
         if type(attrs) is list and all([type(s) == str for s in attrs]):
             return {i: j for i, j in self.__dict__.items() if i in attrs}
         return self.__dict__
-def reload_from_json(self, json):
-    """replaces all attributes of the Student instance"""
+    def reload_from_json(self, json):
+        """replaces all attributes of the Student instance"""
     items = list(json.items())
     i = 0
     while i < len(items):
