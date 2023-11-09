@@ -32,6 +32,8 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         """string representation rectangle"""
         return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
+
+
 class Square(Rectangle):
     """A class that represents a square."""
     def __init__(self, size):
