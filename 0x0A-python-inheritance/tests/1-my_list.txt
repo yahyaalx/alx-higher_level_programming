@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+"""
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> print(isinstance(my_list, list))
+True
+>>> print(my_list.__str__())
+[]
+>>> my_list.append(2)
+>>> print(my_list.__str__())
+[2]
+>>> my_list.append(1)
+>>> my_list.print_sorted()
+[1, 2]
+>>> my_list.append(-1)
+>>> my_list.print_sorted()
+[-1, 1, 2]
+>>> my_list2 = MyList()
+>>> my_list2.print_sorted()
+[]
+>>> print(my_list2.print_sorted() is my_list2)
+False
+"""
